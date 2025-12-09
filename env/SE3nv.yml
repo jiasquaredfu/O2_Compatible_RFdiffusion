@@ -1,4 +1,4 @@
-name: SE3nv
+name: rfdiff
 channels:
   - defaults
   - conda-forge
@@ -6,14 +6,15 @@ channels:
   - nvidia
   - dglteam/label/th24_cpu
 dependencies:
-  - python=3.11
+  - python=3.10
   - numpy<2.0
   - scipy
   - pandas
   - h5py
-  - biopython 
+  - biopython
   - scikit-learn
   - pydantic<2
+  - dgl
   - pip
   - pip:
         - torch
