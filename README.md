@@ -67,7 +67,7 @@ If you want to set up RFdiffusion locally, follow the steps below:
 
 To get started using RFdiffusion, clone the repo:
 ```
-git clone https://github.com/RosettaCommons/RFdiffusion.git
+git clone https://github.com/jiasquaredfu/O2_Compatible_RFdiffusion.git
 ```
 
 You'll then need to download the model weights into the RFDiffusion directory.
