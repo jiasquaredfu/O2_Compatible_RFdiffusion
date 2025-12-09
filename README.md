@@ -99,7 +99,7 @@ You also need to install [NVIDIA's implementation of SE(3)-Transformers](https:/
 ```
 conda env create -f env/SE3nv.yml
 
-conda activate SE3nv
+conda activate rfdiff
 cd env/SE3Transformer
 pip install --no-cache-dir -r requirements.txt
 python setup.py install
@@ -108,7 +108,7 @@ pip install -e . # install the rfdiffusion module from the root of the repositor
 ```
 Anytime you run diffusion you should be sure to activate this conda environment by running the following command:
 ```
-conda activate SE3nv
+conda activate rfdiff
 ```
 Total setup should take less than 30 minutes on a standard desktop computer.
 Note: Due to the variation in GPU types and drivers that users have access to, we are not able to make one environment that will run on all setups. As such, we are only providing a yml file with support for CUDA 11.1 and leaving it to each user to customize it to work on their setups. This customization will involve changing the cudatoolkit and (possibly) the PyTorch version specified in the yml file.
