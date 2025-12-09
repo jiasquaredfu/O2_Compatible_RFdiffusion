@@ -3,16 +3,22 @@ channels:
   - defaults
   - conda-forge
   - pytorch
-  - dglteam
   - nvidia
+  - dglteam/label/th24_cpu
 dependencies:
-  - python=3.9
-  - pytorch=1.9
-  - torchaudio
-  - torchvision
-  - cudatoolkit=11.1
-  - dgl-cuda11.1
+  - python=3.11
+  - numpy<2.0
+  - scipy
+  - pandas
+  - h5py
+  - biopython 
+  - scikit-learn
+  - pydantic<2
   - pip
   - pip:
+    - "--index-url https://download.pytorch.org/whl/cu128"
+    - torch
+    - torchvision
+    - torchaudio
     - hydra-core
     - pyrsistent
